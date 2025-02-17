@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency_Converter_App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="container">
+      
+        <h1>Currency Converter</h1>
+        <p>Enter Amount</p>
+        <input type="number" placeholder="Amount"
+        min="1"
+        max="100"
+        id="amt"
+         />
+
+        <div class="dropdown">
+          <div class="first">
+            <p>From</p>
+            <img src="https://flagsapi.com/IN/flat/64.png" />
+            <br />
+            <div class="custom-dropdown">
+              <select id="option1" class="scrollable-dropdown">
+                
+                  <option value="INR">India</option>
+                  <option value="BDT">Bangladesh</option>
+                  <option value="NPR">Nepal</option>
+                  <option value="BTN">Bhutan</option>
+                  <option value="LKR">Shri Lanka</option>
+                  <option value="MMK">Myanmar</option>
+                  <option value="PKR">Pakistan</option>
+                  <option value="AFN">Afghanistan</option>
+                  <option value="TJS">Tajikistan</option>
+                
+              </select>
+            </div>
+          </div>
+
+          <div class="second">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          </div>
+
+          <div class="third">
+            <p>To</p>
+            <img src="https://flagsapi.com/US/flat/64.png" /><br />
+            <select id="option2">
+              <option value="CAD">Canada</option>
+              <option value="USD">United State of America</option>
+              <option value="BRL">Brazil</option>
+            </select>
+          </div>
+        </div>
+        <br /><br />
+        <div class="result">
+          <p id="input">0</p> 
+          <p> = </p>
+          <p id="output">0</p>
+        </div><br>
+        <button onclick="currencyConvert()" class="btn">Get Exchange Rate</button>
+      
+    </div>
+    <script src="currency.js"></script>
+    <script src="codes.js"></script>
+  </body>
+</html>
