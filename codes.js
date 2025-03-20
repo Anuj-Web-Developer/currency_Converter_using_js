@@ -65,7 +65,7 @@ const countryList = {
   HUF: "HU",
   IDR: "ID",
   ILS: "IL",
-  INR: "IN",
+  INR: "India",
   IQD: "IQ",
   IRR: "IR",
   ISK: "IS",
